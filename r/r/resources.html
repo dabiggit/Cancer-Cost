@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cancer Support Resources & Financial Aid</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="CancerCare Platform Home">
+        <div class="logo">CC</div>
+        <span class="brand-name">CancerCare Platform</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">☰</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="costs.html">Costs</a></li>
+          <li><a href="resources.html" aria-current="page">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <header class="page-header">
+        <h1>Support Resources & Financial Aid</h1>
+        <p class="muted">Find financial assistance, counseling, and advocacy resources in your area.</p>
+      </header>
+
+      <section class="card">
+        <div class="card-body">
+          <div class="grid grid-3-2 gap-md align-center">
+            <div>
+              <label for="stateSelect" class="fw-semibold">Filter by State</label>
+              <select id="stateSelect" aria-describedby="state-help">
+                <option value="">All States</option>
+              </select>
+              <p id="state-help" class="small muted mt-2">
+                National programs are available regardless of state. Select a state to see additional local resources.
+              </p>
+            </div>
+            <div class="text-right">
+              <button id="resetState" class="btn btn-outline">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-lg">
+        <h2 class="h4">Financial Aid Programs</h2>
+        <div id="financialAidList" class="grid grid-2 gap-lg"></div>
+      </section>
+
+      <section class="mt-lg">
+        <h2 class="h4">Counseling & Support Services</h2>
+        <div id="counselingList" class="grid grid-2 gap-lg"></div>
+      </section>
+
+      <section class="mt-lg">
+        <h2 class="h4">Additional Resources</h2>
+        <div id="otherResources" class="grid grid-3 gap-lg"></div>
+      </section>
+
+      <section class="mt-lg">
+        <article class="card danger">
+          <header class="card-header">
+            <h2 class="h5">Emergency & Crisis Resources</h2>
+          </header>
+          <div class="card-body grid grid-2 gap-md">
+            <div>
+              <h3 class="h6">Crisis Support</h3>
+              <p class="mb-2">
+                <strong>988 Suicide & Crisis Lifeline:</strong><br />
+                988 (24/7)
+              </p>
+              <p>
+                <strong>Crisis Text Line:</strong><br />
+                Text HOME to 741741
+              </p>
+            </div>
+            <div>
+              <h3 class="h6">Medical Emergency</h3>
+              <p class="mb-2">
+                <strong>Emergency Services:</strong><br />
+                911
+              </p>
+              <p>
+                <strong>Poison Control:</strong><br />
+                1-800-222-1222
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <div class="logo">CC</div>
+          <span class="muted">CancerCare Platform</span>
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="costs.html">Cost Estimator</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>Phone: 1-341-766-8303</li>
+          <li>Email: harran216@gmail.com</li>
+          <li>Available nationwide, 24/7</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <hr />
+      <p class="small muted">
+        Medical Disclaimer: This platform provides general information and cost estimates for educational purposes
+        only. It is not a substitute for professional medical advice, diagnosis, or treatment.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
