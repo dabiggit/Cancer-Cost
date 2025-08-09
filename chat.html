@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CancerCost</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="CancerCare Platform Home">
+        <div class="logo">CC</div>
+        <span class="brand-name">CancerCost</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">☰</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="costs.html">Costs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="chat.html" aria-current="page">Chat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <header class="page-header">
+        <h1>CancerCost Assistant</h1>
+        <p class="muted">Get instant answers to your questions about cancer treatment costs, resources, and financial assistance.</p>
+      </header>
+
+      <div class="chat-layout">
+        <div class="chat-sidebar">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="h5">💬 Quick Questions</h3>
+            </div>
+            <div class="card-body">
+              <div class="quick-questions">
+                <button class="quick-question-btn" data-question="What are the typical costs for breast cancer treatment?">
+                  💰 Breast cancer costs
+                </button>
+                <button class="quick-question-btn" data-question="What financial assistance programs are available for cancer patients?">
+                  🏥 Financial assistance
+                </button>
+                <button class="quick-question-btn" data-question="How does insurance affect my cancer treatment costs?">
+                  📋 Insurance impact
+                </button>
+                <button class="quick-question-btn" data-question="What factors influence cancer treatment expenses?">
+                  📊 Cost factors
+                </button>
+                <button class="quick-question-btn" data-question="What are the costs for Stage III lung cancer treatment?">
+                  🫁 Lung cancer costs
+                </button>
+                <button class="quick-question-btn" data-question="How can I reduce my out-of-pocket cancer treatment costs?">
+                  💡 Reduce costs
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-lg">
+            <div class="card-header">
+              <h3 class="h5">ℹ️ About This Assistant</h3>
+            </div>
+            <div class="card-body">
+              <div class="assistant-info">
+                <p class="small">I have access to comprehensive cancer treatment cost data and can help with:</p>
+                <ul class="small">
+                  <li>Treatment cost estimates</li>
+                  <li>Financial assistance programs</li>
+                  <li>Insurance coverage questions</li>
+                  <li>Resource recommendations</li>
+                </ul>
+                <p class="small muted mt-2">
+                  <strong>Note:</strong> This is for informational purposes only and not a substitute for professional medical advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-main">
+          <div class="chat-window">
+            <div class="chat-header">
+              <div class="chat-status">
+                <div class="status-indicator online"></div>
+                <span>CancerCost Assistant</span>
+              </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+              <div class="message-wrapper assistant-wrapper">
+                <div class="message-avatar">
+                  <div class="avatar assistant-avatar">🏥</div>
+                </div>
+                <div class="message assistant-message">
+                  <div class="message-content">
+                    <p><strong>Hello! I'm your CancerCost Assistant.</strong></p>
+                    <p>I have access to comprehensive information about cancer treatment costs, financial resources, and general cancer care information. I'm here to help answer your questions and provide guidance.</p>
+                    <p>You can ask me anything about cancer treatment costs, financial assistance programs, insurance coverage, or use the quick questions on the left to get started.</p>
+                    <p>How can I help you today?</p>
+                  </div>
+                  <div class="message-time">Just now</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-input-area">
+              <form id="chatForm" class="chat-form">
+                <div class="input-container">
+                  <textarea 
+                    id="chatInput" 
+                    placeholder="Ask me anything about cancer treatment costs, financial assistance, or resources..."
+                    rows="1"
+                    required
+                  ></textarea>
+                  <button type="submit" class="send-button" id="sendButton">
+                    <span class="send-icon">📤</span>
+                    <span class="loading-dots" style="display: none;">
+                      <span></span><span></span><span></span>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="card mt-lg">
+        <div class="card-header">
+          <h2 class="h4">Important Disclaimer</h2>
+        </div>
+        <div class="card-body">
+          <div class="grid grid-2 gap-lg">
+            <div>
+              <h3 class="h5">What I Can Help With</h3>
+              <ul class="small">
+                <li>Cancer treatment cost estimates and breakdowns</li>
+                <li>Financial assistance programs and eligibility</li>
+                <li>Insurance coverage questions</li>
+                <li>Cost factors and variables</li>
+                <li>Resource recommendations</li>
+                <li>General cancer care information</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="h5">Important Notes</h3>
+              <ul class="small">
+                <li>This is for informational purposes only</li>
+                <li>Always consult with healthcare professionals</li>
+                <li>Cost estimates are based on national averages</li>
+                <li>Actual costs may vary significantly</li>
+                <li>Not a substitute for professional medical advice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <div class="logo">CC</div>
+          <span class="muted">CancerCost</span>
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="costs.html">Cost Estimator</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="chat.html">Chat Assistant</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>Phone: 1-341-766-8303</li>
+          <li>Email: harran216@gmail.com</li>
+          <li>Available nationwide, 24/7</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <hr />
+      <p class="small muted">
+        Medical Disclaimer: This platform provides general information and cost estimates for educational purposes
+        only. It is not a substitute for professional medical advice, diagnosis, or treatment.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
